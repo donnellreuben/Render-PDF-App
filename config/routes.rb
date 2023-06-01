@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  get 'pdfs/generate', to: 'pdfs#generate', as: 'generate_pdf'
+  get '/generate-pdf', to: 'pdfs#generate', as: 'generate_pdf'
   # post 'pdfs/generate', to: 'pdfs#generate', as: 'generate_pdf'
   resources :pdfs
 end
