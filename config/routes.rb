@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'pdfs/generate'
+  post 'pdfs/generate', to: 'pdfs#generate', as: 'generate_pdf'
 end
