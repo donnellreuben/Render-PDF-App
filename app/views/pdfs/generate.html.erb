@@ -1,7 +1,1 @@
 <h1>Generate PDF</h1>
-
-<%= form_with(url: generate_pdf_path, method: :post) do |f| %>
-  <%= f.label :url, 'URL:' %>
-  <%= f.text_field :url %>
-  <%= f.submit 'Generate PDF' %>
-<% end %>

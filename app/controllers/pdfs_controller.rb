@@ -2,11 +2,8 @@ require 'grover'
 
 class PdfsController < ApplicationController
   def generate
-    url = params[:url]
-
-    grover = Grover.new(url)
-    pdf = grover.to_pdf
-
-    send_data pdf, filename: 'generated_pdf.pdf', type: 'application/pdf', disposition: 'attachment'
+      grover = Grover.new('https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9', format: 'A4')
+      pdf = grover.to_pdf
+      send_data pdf, filename: 'generated_pdf.pdf', type: 'application/pdf', disposition: 'inline'
   end
 end
