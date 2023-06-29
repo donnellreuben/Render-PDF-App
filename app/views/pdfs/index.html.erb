@@ -1,0 +1,7 @@
+<h1>Welcome to the PDF Renderer</h1>
+
+<form class="form-group" action="<%= generate_pdf_path %>" method="get">
+  <%= label_tag(:url, "Enter URL:") %>
+  <%= text_field_tag(:url, nil, class: "form-control", placeholder: "<https://example.com>") %>
+  <%= submit_tag("Generate PDF", class: "btn btn-primary") %>
+</form>
