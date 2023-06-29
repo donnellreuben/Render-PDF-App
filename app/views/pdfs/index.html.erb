@@ -1,9 +1,9 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <form style="width: 400px; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #fff;" class="form-group" action="<%= generate_pdf_path %>" method="get">
     <h1 style="margin-bottom: 20px; text-align: center;">Welcome to my PDF Renderer</h1>
-    <p style="margin-top: 10px; text-align: center;">provides you with a pdf document of any website url you input below</p>
+    <p style="margin-top: 10px; text-align: center;">provides you with a pdf document of any website url you input below. Even works with google drive docs (make shareable)</p>
     <div class="form-group">
-      <%= text_field_tag(:url, nil, class: "form-control", placeholder: "<https://example.com>") %>
+      <%= text_field_tag(:url, nil, class: "form-control", placeholder: "https://example.com") %>
     </div>
     <div class="form-group" style="margin-top: 20px; text-align: center;">
       <%= submit_tag("Generate PDF", class: "btn btn-primary", data: { disable_with: "Generating..." }, onclick: "window.location.href='#{generate_pdf_path}?url=' + encodeURIComponent(document.getElementById('url').value)") %>
