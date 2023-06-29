@@ -32,3 +32,5 @@ npm install puppeteer
 
 ## How to use:
 Navigate to controllers/pdfs_controller and change google url to any url containing a document generate a pdf out of. This can even be a google drive doc. Make sure google doc link is a shareable link.
+
+http://localhost:3000/generate-pdf 
