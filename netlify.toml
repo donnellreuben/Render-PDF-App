@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "/pdfs/index.html"
+  status = 200
+  force = true
