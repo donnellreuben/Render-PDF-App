@@ -2,7 +2,7 @@
 Made with ❤️ using 
 
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ruby,rails,bootstrap" />
+    <img src="https://skillicons.dev/icons?i=ruby,rails,bootstrap,railway" />
   </a>
 
 ## Description
